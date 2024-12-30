@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="../img/favicon.webp" type="image/webp" />
+    <link rel="stylesheet" href="../css/base.css" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/product-cart.css" />
+    <title>Dola Bakery</title>
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <div class="container">
+          <!-- chia thanh header align-items-center ở giữa theo bootstrap 12 cột grid system (row)  -->
+          <div class="row align-items-center">
+            <!-- cục bar, d-lg-none: d display lg large / khi ở màn hình lớn thì none/ chỉ tablet và đth -->
+            <div class="header__sidebar-btn d-lg-none d-block">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- logo chiếm 2 -->
+            <div class="col-lg-2">
+              <a href="/" class="d-flex justify-content-center d-lg-block">
+                <img
+                  class="header__logo"
+                  src="../img/logo.webp"
+                  alt="Dola Bakery's Logo"
+                />
+              </a>
+            </div>
+            <!-- thanh navbar chiếm 8 -->
+            <div class="col-lg-8" style="position: relative">
+              <nav class="navbar">
+                <ul class="navbar__list">
+                  <li class="navbar__list-item">
+                    <a href="/">Trang chủ</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Giới thiệu</a>
+                  </li>
+                  <li class="navbar__list-item header__dropdown">
+                    <a href="/">
+                      Sản phẩm
+                      <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <!-- khung sản phẩm khi hover vào -->
+                    <div class="dropdown d-none d-lg-block">
+                      <!-- mục sản phẩm ở header -->
+                      <!-- chia làm 4 cột theo hàng ngang, thì mỗi cột chiếm 3 -->
+                      <div class="row g-4">
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh kem </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh sinh nhật">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh sinh nhật
+                              </a>
+                            </li>
+
+                            <li title="Bánh sự kiện">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh sự kiện
+                              </a>
+                            </li>
+
+                            <li title="Bánh cho trẻ em">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh cho trẻ em
+                              </a>
+                            </li>
+
+                            <li title="Bánh kem đặt trước">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh kem đặt trước
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh mì </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh mì kẹp">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì kẹp
+                              </a>
+                            </li>
+
+                            <li title="Bánh cán lớp">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh cán lớp
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì gối">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì gối
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì baguette">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì baguette
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì mặn">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì mặn
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì ngọt">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì ngọt
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh ngọt </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh bông lan">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh bông lan
+                              </a>
+                            </li>
+
+                            <li title="Bánh Chiffon">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Chiffon
+                              </a>
+                            </li>
+
+                            <li title="Bánh cuộn">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh cuộn
+                              </a>
+                            </li>
+
+                            <li title="Bánh su kem">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh su kem
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/">
+                            Bánh tráng miệng
+                          </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh miếng">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh miếng
+                              </a>
+                            </li>
+
+                            <li title="Bánh mousse">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mousse
+                              </a>
+                            </li>
+
+                            <li title="Tiramisu/ Caramel/ Sữa chua">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Tiramisu/ Caramel/ Sữa chua
+                              </a>
+                            </li>
+
+                            <li title="Panna cotta & Pudding">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Panna cotta &amp; Pudding
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!--  -->
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh khô </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh quy">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh quy
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì nướng">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì nướng
+                              </a>
+                            </li>
+
+                            <li title="Bánh sừng bò mini">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh sừng bò mini
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/">
+                            Bánh đông lạnh
+                          </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh bao">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh bao
+                              </a>
+                            </li>
+
+                            <li title="Bánh pizza">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh pizza
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/">
+                            Bánh theo mùa
+                          </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh quy Tết">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh quy Tết
+                              </a>
+                            </li>
+
+                            <li title="Bánh Trung thu">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Trung thu
+                              </a>
+                            </li>
+
+                            <li title="Bánh Quy Noel">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Quy Noel
+                              </a>
+                            </li>
+
+                            <li title="Bánh Kem Noel">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Kem Noel
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Đồ uống </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Tin tức</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Liên hệ</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Hệ thống cửa hàng</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Câu hỏi thường gặp</a>
+                  </li>
+                </ul>
+                <!-- nút <> -->
+                <div class="navbar__control">
+                  <i id="prev" class="fa-solid fa-chevron-left"></i>
+                  <i id="next" class="fa-solid fa-chevron-right"></i>
+                </div>
+              </nav>
+            </div>
+            <!-- dãy nút tiện ích chiếm 2 -->
+            <div class="col-lg-2">
+              <ul class="header__control">
+                <!-- nút search -->
+                <div class="header__control-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- nút person -->
+                <div class="header__control-icon d-none d-lg-block">
+                  <!-- d-none: màn hình nhỏ thì none, d-lg-block: màn hình to thì block -->
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <!-- nút tim -->
+                <div class="header__control-icon header__dropdown">
+                  <i class="fa-regular fa-heart">
+                    <span class="header__control-count">0</span>
+                  </i>
+                  <div class="dropdown header__control-dropdown favorite"></div>
+                </div>
+                <!-- nút cart -->
+                <div class="header__control-icon header__dropdown">
+                  <i class="fa-solid fa-cart-shopping">
+                    <span class="header__control-count">0</span>
+                  </i>
+                  <div class="dropdown header__control-dropdown cart"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section">
+        <!-- swiper.js -->
+        <div class="home-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider__item">
+                <!-- header img 1 -->
+                <img
+                  class="slider__img"
+                  src="/assets/img/slider_1.webp"
+                  alt="Slider Image"
+                />
+                <div class="slider__text d-lg-block d-none">
+                  <h1 class="slider__text-title">Bánh tươi mỗi ngày</h1>
+                  <p class="slider__text-desc">
+                    Giảm đến 20% khi đặt hàng qua web
+                  </p>
+                  <a href="/" class="slider__text-btn">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__item">
+                <!-- header img 2 -->
+                <img
+                  class="slider__img"
+                  src="/assets/img/slider_2.webp"
+                  alt="Slider Image"
+                />
+                <div class="slider__text d-lg-block d-none">
+                  <h1 class="slider__text-title">Bánh tươi mỗi ngày</h1>
+                  <p class="slider__text-desc">
+                    Giảm đến 20% khi đặt hàng qua web
+                  </p>
+                  <a href="/" class="slider__text-btn">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-product-cart container">
+        <h1>Giỏ Hàng Của Bạn</h1>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>CHÍNH SÁCH</h3>
+            <p>Chính sách thanh toán</p>
+            <p>Chính sách đổi hàng</p>
+            <p>Bảo mật thông tin</p>
+          </div>
+          <div class="footer-section">
+            <h3>THÔNG TIN CHUNG</h3>
+            <p>Địa chỉ: Biên Hòa, Đồng Nai</p>
+            <p>Email: <a href="mailto:support@dola.com">support@dola.com</a></p>
+          </div>
+          <div class="footer-section">
+            <h3>HỖ TRỢ</h3>
+            <p>Mua Online: 19006750 (08:00 - 22:00 mỗi ngày)</p>
+            <p>Góp ý & Khiếu nại: 19006750 (08:00 - 20:30)</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook footer-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter footer-icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Bản quyền thuộc về Dola Bakery</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/swiper.js"></script>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/favorites.js"></script>
+    <script src="../js/product-cart.js"></script>
+  </body>
+</html>
